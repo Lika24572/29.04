@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Какое это животное?</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #fa5555;
+            font-family: Arial, sans-serif;
+        }
+        .image-container {
+            margin-top: 20px;
+        }
+        img {
+            width: 400px;
+            border: 2px solid #333;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function showMessage(answer) {
+            if (answer === "верно") {
+                alert("Правильно!");
+            } else {
+                alert("Попробуйте ещё раз");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Какое это животное?</h2>
+    
+    <div class="image-container">
+        <img src="pic/1.png" alt="Львы">
+    </div>
+
+    <div class="buttons">
+        <button onclick="showMessage('неверно')">Это тигр</button>
+        <button onclick="showMessage('неверно')">Это кот</button>
+        <button onclick="showMessage('верно')">Это лев</button>
+    </div>
+
+</body>
+</html>
